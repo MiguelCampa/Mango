@@ -42,9 +42,9 @@ public class TelevisionTest {
     @Test
     public void testCambiarVolumen() {
         System.out.println("cambiarVolumen");
-        int cantidad = 84;
+        int cantidad = 58;
         Television tv = new Television ("Samsung", "XH256", "Negro", 56 , 35) ;
-        String expResult = "Cambio el volumen a 84";
+        String expResult = "Cambio el volumen a 58";
         String result = tv.cambiarVolumen(cantidad);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

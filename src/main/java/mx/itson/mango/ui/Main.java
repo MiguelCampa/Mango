@@ -17,10 +17,9 @@ public class Main {
     
    Television tv = new Television("Samsung", "XH256", "Negro", 55, 35);
    Computadora pc = new Computadora ("Asus", "Ninja2000", "Blanca", 128, 1024);
-            
-    int a = 0;   
+               
     
-    tv.endencer();
+    tv.encender();
     tv.cambiarVolumen(62);
     
     pc.encender();

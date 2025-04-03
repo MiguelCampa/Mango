@@ -4,14 +4,12 @@
  */
 package mx.itson.mango.entidades;
 
-import java.util.Scanner;
-
 /**
  *
  * @author alumnog
  */
 public class Computadora extends DispositivoElectronico {
-    
+   
     private int memoriaRAM;
     private int espacioDisco;
     
@@ -21,10 +19,14 @@ public class Computadora extends DispositivoElectronico {
     this.espacioDisco = espacioDisco;
     }
 
-    
-   // public static double espacioDisco(double espacioLibre){
-     //  return espacioLibre = espacioDisco - pesoAplicacion
-    
+    public String dimsminuirEspacio(int cantidad){
+        if (cantidad > espacioDisco){
+            return "El tamaño del archivo excede el espacio disponible";
+        } else{
+            this.espacioDisco -= cantidad;
+           return "La cantidad total del espacio utilizado eso";
+        }
+    }  
 }
 
 
